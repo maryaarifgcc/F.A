@@ -4,12 +4,48 @@
         <title>Contact Page</title>
         <meta charset="utf-8">
     </head>
-    <h1>Contact us</h1>
+    <div>
+        <h1>School Registration</h1>
+        <h2>Additional documents for registraton</h2>
+        <p>Bring this registration form and the following dacumentation to the school office.</p>
+        <ul>
+            <li>Original Certified Birth Certificate</li>
+            <li>Oraginal Social Security Card</li>
+            <li>Current Immunization Form</li>
+            <li>Current Proofs of Residence</li>
+        </ul>
+    </div>
     <div>
         <form action="post">
             <fieldset>
-                <label for="">Name:</label>
-                <input type="text" name="name" id="name_input">
+                <legend>Student Information</legend>
+                <label for="">First Name</label>
+                <input type="text" name="first_name_input" id="name_input">
+                <label for="">Last Name</label>
+                <input type="text" name="last_name_input" id="last_name_input">
+                <label for="">Birth Date</label>
+                <input type="date" name="" id="birth_date_input">
+                <label for="">Gender</label>
+                <input type="radio" name="gender" id="male_input" value="Male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <label for="">Ethnicity</label>
+                <select name="ethnicity_selection" id="ethnicity_selection_input">
+                    <option value="pashton">Pashton</option>
+                    <option value="tajik">Tajik</option>
+                    <option value="hazara">Hazara</option>
+                    <option value="uzbek">Uzbek</option>
+                </select>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email_input">
+                <label for="">Phone</label>
+                <input type="tel" name="phone" id="phone_input">
+                <label for="">Semester</label>
+                <input type="text" name="semester" id="semester_input">
+                <label for="">Have you previously applied to ar attended this school?</label>
+                <input type="radio" name="previously_apply_attend" id="previously_apply_attend_yes_input">Yes
+                <input type="radio" name="previously_apply_attend" id="previously_apply_attend_no_input">No
+                <label>If yes, Which year?</label>
+
             </fieldset>
         </form>
     </div>
